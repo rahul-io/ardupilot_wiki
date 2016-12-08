@@ -6,7 +6,7 @@ Copter Home
 
 .. tip::
 
-   The ArduPilot Developer Ecosystem is Evolving! `Find out more here … <http://diydrones.com/profiles/blogs/a-new-chapter-in-ardupilot-development>`__
+    Keep up with the latest ArduPilot related blogs on `ArduPilot.org! <http://ardupilot.org/>`__
 
 
 .. image:: /images/home_copter.jpg
@@ -157,9 +157,7 @@ Getting more info
 ~~~~~~~~~~~~~~~~~
 
 -  Continue to the :ref:`Introduction section of this wiki. <introduction>`
--  Visit `DIYDrones.com <http://diydrones.com/>`__ a large community of
-   UAV enthusiast largely clustered around the ArduPilot family of autopilots.
--  Use the `APM Forums <http://ardupilot.com/forum/viewforum.php?f=3>`__
+-  Use the `ArduPilot Discuss Server Forums <http://discuss.ardupilot.com/c/arducopter>`__
    to ask support questions and advice.
 -  Read or join the `drones-discuss email list <https://groups.google.com/forum/#!forum/drones-discuss>`__ once
    you're ready to get involved with the development of the software platform.

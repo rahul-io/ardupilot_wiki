@@ -21,13 +21,13 @@ Disconnected.
 ---------------------------------------------------------------------------
 
 .. image:: ../images/ap2_comm_port_fw_selection_simple.jpg
-    :target: ../_images/apm_planner2_comm_port_fw_selection_simple.jpg
+    :target: ../_images/ap2_comm_port_fw_selection_simple.jpg
 
 APM Planner will notify you when the status bar reaches 100% and the
 firmware installation in complete.
 
 .. image:: ../images/ap2_install-firmware-complete.png
-    :target: ../_images/apm_planner2_install-firmware-complete.png
+    :target: ../_images/ap2_install-firmware-complete.png
 
 3 (Pixhawk/PX4) Power cycle and listen for the tone.
 ----------------------------------------------------
@@ -46,5 +46,8 @@ installation is complete.
 If you are an experienced tester looking to download a beta version of
 developing firmware, select beta to view the available beta firmwares.
 
+.. note::
+    You may need to put APM Planner 2.0 in Advanced Mode by selecting File -> Advanced in the menu to show the extra options
+
 .. image:: ../images/ap2_install-firmware-beta.png
-    :target: ../_images/apm_planner2_install-firmware-beta.png
+    :target: ../_images/ap2_install-firmware-beta.png

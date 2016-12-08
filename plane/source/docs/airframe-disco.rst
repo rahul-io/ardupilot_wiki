@@ -305,3 +305,13 @@ The log directory is /data/ftp/internal_000/APM/logs and can be
 accessed by ftp. Just enter a URL like ftp://192.168.42.1/ in Windows
 Explorer if using Windows to view the storage on the Disco and access
 log files. These files have a ".bin" extension (for binary log file).
+
+The C.H.U.C.K Autopilot
+=======================
+
+The heart of the Disco is the C.H.U.C.K autopilot, an orange box
+which is a general purpose autopilot. It is perfectly possible to use
+the C.H.U.C.K in a different airframe.
+
+For more information on using C.H.U.C.K with ArduPilot please see
+the :ref:`C.H.U.C.K AutoPilot <common-CHUCK-overview>`

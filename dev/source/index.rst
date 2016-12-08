@@ -6,8 +6,7 @@ Welcome to the ArduPilot Development Site
 
 .. tip::
 
-    The ArduPilot Developer Ecosystem is Evolving! 
-    `Find out more here … <http://diydrones.com/profiles/blogs/a-new-chapter-in-ardupilot-development>`__
+    Keep up with the latest ArduPilot related blogs on `ArduPilot.org! <http://ardupilot.org/>`__
 
 
 :ref:`ArduPilot/APM <ardupilot:home>` is a open source autopilot
@@ -128,7 +127,7 @@ How the team works
    and is open to anyone to join
 -  The development team is also using `gitter <https://gitter.im/>`__
    for APM development discussions -
-   https://gitter.im/diydrones/ardupilot#
+   https://gitter.im/ArduPilot/ardupilot
 -  We have a :ref:`mumble server <ardupilot-mumble-server>`
    for real-time voice discussions
 -  Our annual developers conference is
@@ -189,16 +188,16 @@ Full Table of Contents
     Learning the ArduPilot Codebase <docs/learning-the-ardupilot-codebase>
     Code Overview (Copter) <docs/apmcopter-code-overview>
     Building the code <docs/building-the-code>
-    Loading the code onto APM2.x <docs/load-the-code-onto-apm2x>
     Code Editors & IDEs <docs/code-editing-tools-and-ides>
     Simulation & Testing <docs/simulation-2>
     Debugging <docs/debugging>
     Contributing <docs/contributing>
     MAVLink Commands <docs/mavlink-commands>
-    Advanced Configuration Settings <docs/advanced-configuration-settings>
+    Companion Computers <docs/companion-computers>
+    EKF <docs/ekf>
+    ROS <docs/ros>
+    Pixhawk Advanced Hardware Info <docs/pixhawk-advanced-hardware-info>
     MAVProxy Developer GCS <docs/mavproxy-developer-gcs>
     RTF Vehicle Developer Information <docs/ready-to-fly-rtf-vehicle-developer-information>
-    Companion Computers <docs/companion-computers>
-    Mission Planner Terminal <docs/mission-planner-terminal>
     Appendix <docs/common-appendix>
     Full Table of Contents <docs/common-table-of-contents>

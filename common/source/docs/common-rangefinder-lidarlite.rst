@@ -200,6 +200,10 @@ You then need the following parameters set to enable the PWM driver:
 -  ``RNGFND_SCALING`` = 1
 -  ``RNGFND_OFFSET`` = 0
 
+
+**Note**: For RNGFND_SCALING your mileage may vary. Some units work better using RNGFND_SCALING=0.8.
+
+
 The use of pin 55 as the stop pin is just a suggestion, not a
 requirement. It connects to the enable pin on the Lidar, and allows the
 driver to reset the Lidar if it stops providing readings.
@@ -266,6 +270,13 @@ Testing the sensor
 
 Distances read by the sensor can be seen in the Mission Planner's Flight
 Data screen's Status tab.  Look closely for "sonarrange".
+Its best to place the Lidar several known distances (1m, 3m, 5m) from
+a large flat wall to test it.  If the Lidar is constantly reading
+wrong by a fixed offset e.g. its always 50cm out at each distance then
+adjust the RNGFND_OFFSET parameter by the correct amount.  If however
+it gets the distance wrong each time by a different amount then the
+RNGFND_SCALING parameter needs changing.  Update it (maybe 1.1 or 0.9)
+and test again and repeat until its correct.
 
 .. image:: ../../../images/mp_rangefinder_lidarlite_testing.jpg
     :target: ../_images/mp_rangefinder_lidarlite_testing.jpg

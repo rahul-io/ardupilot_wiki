@@ -74,7 +74,7 @@ Step #2 - Start the VM for the first time
 #. Enter your password when the login screen appears
 #. Say "no" to any options to upgrade versions
 #. Open firefox and make sure it can access some web page like
-   www.diydrones.com
+   www.ardupilot.org
 
    .. |Ubuntu_TestNetworkWithFirefox| image:: ../images/ubuntu_test_network_with_firefox.jpg
        :target: ../_images/ubuntu_test_network_with_firefox.jpg
@@ -181,7 +181,7 @@ terminal on the Ubuntu VM:
 
 ::
 
-    ./Tools/autotest/autotest.py build.Copter fly.Copter logs.Copter --map --viewerip=192.168.184.1
+    ./Tools/autotest/autotest.py build.ArduCopter fly.ArduCopter --map --viewerip=192.168.184.1
 
 Next connect with the mission planner after first setting the "COM Port"
 to "UDP".

@@ -22,6 +22,9 @@ information related to Autopilot selection see :ref:`Autopilot Hardware Options 
     Telemetry <common-telemetry-landingpage>
     Power Modules <common-powermodule-landingpage>
     Rangefinders <common-rangefinder-landingpage>
+[site wiki="copter"]
+    360 Lidar for Object Avoidance <common-lightware-sf40c-objectavoidance>
+[/site]
     Optical Flow Sensor <common-optical-flow-sensors-landingpage>
     Cameras & Gimbals <common-cameras-and-gimbals>
     OSD for FPV <common-osd-boards-on-screen-display>
@@ -29,8 +32,7 @@ information related to Autopilot selection see :ref:`Autopilot Hardware Options 
     GPS/Compass <common-positioning-landing-page>
     Relay Switch <common-relay>   
     UAVCAN ESCs <common-uavcan-escs>
-    EPM Gripper (EPM688) <common-electro-permanent-magnet-gripper>
-    EPM Gripper (OpenGrab V3) <common-electro-permanent-magnet-V3>
+    Grippers <common-gripper-landingpage>
     PPM Encoder <common-ppm-encoder>
     Received Signal Strength Indication (RSSI) <common-rssi-received-signal-strength-indication>
     External LEDs <common-external-leds>
@@ -43,6 +45,7 @@ information related to Autopilot selection see :ref:`Autopilot Hardware Options 
     Precision Landing (IRLock) <precision-landing-with-irlock>
     ADS-B Receiver <common-ads-b-receiver>
     Crop Sprayer <sprayer>
+    Pozyx for Non-GPS navigation <common-pozyx>
 [/site]
 
 [site wiki="plane"]

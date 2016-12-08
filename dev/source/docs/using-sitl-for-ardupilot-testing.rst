@@ -85,10 +85,10 @@ When starting SITL the first time, the device may be configured with
 "unforgiving" parameters. Typically you will want to replace these with
 values that simulate more realistic vehicle and environment conditions.
 Useful parameter sets are provided in the autotest source for
-`Copter <https://github.com/ArduPilot/ardupilot/blob/master/Tools/autotest/copter_params.parm>`__,
-`Plane <https://github.com/ArduPilot/ardupilot/blob/master/Tools/autotest/ArduPlane.parm>`__
+`Copter <https://github.com/ArduPilot/ardupilot/blob/master/Tools/autotest/default_params/copter.parm>`__,
+`Plane <https://github.com/ArduPilot/ardupilot/blob/master/Tools/autotest/default_params/plane.parm>`__,
 and
-`Rover <https://github.com/ArduPilot/ardupilot/blob/master/Tools/autotest/Rover.parm>`__.
+`Rover <https://github.com/ArduPilot/ardupilot/blob/master/Tools/autotest/default_params/rover.parm>`__.
 
 .. tip::
 
@@ -101,15 +101,15 @@ The MAVProxy commands to load the parameters for Copter, Rover and Plane
 
 ::
 
-    param load ..\Tools\autotest\copter_params.parm
+    param load ..\Tools\autotest\default_params\copter.parm
 
 ::
 
-    param load ..\Tools\autotest\ArduPlane.parm
+    param load ..\Tools\autotest\default_params\plane.parm
 
 ::
 
-    param load ..\Tools\autotest\Rover.parm
+    param load ..\Tools\autotest\default_params\rover.parm
 
 You can re-load the parameters later if you choose, or revert to the
 default parameters by starting SITL (**sim_vehicle.py**) with the
@@ -390,6 +390,36 @@ is equivalent to COM16:
     sim_vehicle.py -A "--uartC=uart:/dev/ttyS15" --console --map
 
 .. _using-sitl-for-ardupilot-testing_connecting_otheradditional_ground_stations:
+
+
+Changing the speed of the simulation
+====================================
+
+Most of the simulator backends support changing the speed while
+running. Just set the SIM_SPEEDUP parameter as needed. A value of 1
+means normal wall-clock time. A value of 5 means 5x realtime. A value
+of 0.1 means 1/10th of real time.
+
+Testing Compass Calibration
+===========================
+
+A quick way to test compass calibration in SITL is with the
+"calibration" vehicle model. To use this with plane do this:
+
+   sim_vehicle.py -j4 -D -f plane --model calibration --console --map
+
+then do:
+
+   servo set 5 1250
+
+This will start the vehicle moving through a "compass dance". You can
+start a compass calibration to test changes to the calibrator
+code. Using this in combination with the SIM_SPEEDUP parameter can be useful.
+
+The calibration vehicle module has a lot of other features too. See
+`http://guludo.me/posts/2016/05/27/compass-calibration-progress-with-geodesic-sections-in-ardupilot/
+<http://guludo.me/posts/2016/05/27/compass-calibration-progress-with-geodesic-sections-in-ardupilot/>`__
+for details.
 
 Connecting other/additional ground stations
 ===========================================

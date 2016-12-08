@@ -50,6 +50,11 @@ for more information.
 SITL Architecture
 =================
 
+Note in the image below the port numbers are indicative only and can
+vary.  For instance the ports between ArduPilot and the simulator
+on the image are 5501/5502 but they can vary to be 5504/5505 or other
+port numbers depending on your environment.
+
 .. image:: ../images/ArdupilotSoftwareintheLoopSITL.jpg
     :target: ../_images/ArdupilotSoftwareintheLoopSITL.jpg
 
@@ -61,7 +66,7 @@ SITL Architecture
     SITL using Vagrant <setting-up-sitl-using-vagrant>
     Copter SITL/MAVProxy Tutorial <copter-sitl-mavproxy-tutorial>
     ArduPilot Testing using SITL <using-sitl-for-ardupilot-testing>
-    Using ROS/Gazebo Simulator with SITL <using-rosgazebo-simulator-with-sitl>
+    Using Gazebo Simulator with SITL <using-gazebo-simulator-with-sitl>
     Using Last_letter Simulator with SITL <using-last_letter-as-an-external-sitl-simulator>
     Using the CRRCSim simulator <simulation-2sitl-simulator-software-in-the-loopusing-using-the-crrcsim-simulator>
     SITL on Windows in a VM <setting-up-sitl-on-windows>

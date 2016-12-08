@@ -19,9 +19,9 @@ you were flying a real plane. A GCS can also be used to control a UAV in
 flight, uploading new mission commands and setting parameters. It is
 often also use to monitor the live video stream from a UAV’s cameras.
 
-There are at least nine different ground control stations (*Mission
-Planner*, *APM Planner 2*, *MAVProxy*, *UgCS*, *Tower* (DroidPlanner 3),
-*AndroPilot*, *MAVPilot*, *iDroneCtrl* and *QGroundControl*) that can be
+There are at least ten different ground control stations, Desktop there is (*Mission
+Planner*, *APM Planner 2*, *MAVProxy*, *QGroundControl* and *UgCS*. For Tablet/Smartphone there is
+*Tower* (DroidPlanner 3), *MAVPilot*, *AndroPilot* and *SidePilot* that can be
 used to communicate with ArduPilot (i.e.
 :ref:`Copter <copter:home>`,
 :ref:`Plane <plane:home>`,
@@ -44,8 +44,106 @@ and preferred computing platform:
    Mission Planner, because it was created first and is the most
    full-featured GCS.
 
-Comparison
-==========
+Comparison Desktop
+==================
+
+Mission Planner
+---------------
+
+Full featured and widely used GCS.
+
+-  **Platform**: Windows, Mac OS X (Using Mono)
+-  **Licence**: `Open source <https://github.com/ArduPilot/MissionPlanner/blob/master/COPYING.txt>`__
+   (GPLv3)
+
+.. image:: ../../../images/MP-FP-Screen.jpg
+    :target: ../_images/MP-FP-Screen.jpg
+
+-  :ref:`Wiki <planner:home>`
+-  `Support Forum <http://ardupilot.com/forum/viewforum.php?f=12>`__
+-  `Issues List <https://github.com/ArduPilot/MissionPlanner/issues>`__
+-  `Source Code <https://github.com/ArduPilot/MissionPlanner>`__
+
+APM Planner 2.0
+---------------
+
+The best autopilot for use on MAC and Linux platforms. It has a smaller
+user base and reduced feature set when compared with Mission Planner.
+
+-  **Platform**: Windows, Mac OS X, Linux
+-  **Licence**: `Open source <https://github.com/ArduPilot/apm_planner/blob/master/license.txt>`__
+   (GPLv3)
+
+.. image:: ../../../images/planner2_choose_agcs.jpg
+    :target: ../_images/planner2_choose_agcs.jpg
+
+-  :ref:`Wiki <planner2:home>`
+-  `Support Forum <http://ardupilot.com/forum/viewforum.php?f=82>`__
+-  `Issues List <https://github.com/ArduPilot/apm_planner/issues>`__
+-  `Source Code <https://github.com/ArduPilot/apm_planner>`__
+
+MAVProxy
+--------
+
+Linux GCS often used by Plane developers. Primarily a command line
+interface with graphical modules for map and mission editing. Written in
+Python, and extensible via python modules.
+
+-  **Platform**: Linux
+-  **Licence**: `Open source <https://github.com/tridge/MAVProxy/blob/master/COPYING.txt>`__
+   (GPLv3)
+
+.. image:: ../../../images/mavproxy_linux.jpg
+    :target:  http://ardupilot.github.io/MAVProxy/html/_images/mavproxy_linux.jpg
+
+-  `Getting Started <http://ardupilot.github.io/MAVProxy/html/index.html>`__
+-  `Issues List <https://github.com/ArduPilot/MAVProxy/issues>`__
+-  `Source Code <https://github.com/ArduPilot/MAVProxy>`__
+
+QGroundControl
+--------------
+
+QGroundControl work with MAVLink capable autopilots. It's main focus orginally has been PX4 Flight Stack,
+but it now also comes with complete support for ArduPilot based autopilots. It's unique among the GCS offerings
+as it runs on all platforms desktop and mobile.
+
+-  **Platform**: Windows, Mac OS X, Linux, Android and iOS
+-  **Licence**: `Open Source <http://www.qgroundcontrol.org/license>`__
+   (GPLv3)
+
+.. image:: ../../../images/QGroundControlTabletImage.jpg
+    :target: ../_images/QGroundControlTabletImage.jpg
+
+-  `Website <http://www.qgroundcontrol.org/>`__
+-  `Support Forum <https://groups.google.com/forum/#!forum/qgroundcontrol>`__
+-  `Gitter <https://gitter.im/mavlink/qgroundcontrol>`__
+
+UgCS - Universal Ground Control Station
+---------------------------------------
+
+Universal and easy to use ground control station with a 3D interface. Supports APM, Pixhawk as well as drones from other manufacturers such as DJI, Mikrokopter and more.
+Intended for enthusiasts as well as professional users.
+
+It is capable of communicating with and controlling multiple drones simultaneously. 
+
+UgCS supports multiple map layers as well as different map providers. Some of the features of UgCS include - DEM Import, ADS-B transponder and receiver support, Click & Go mode, Joystick mode, image geotagging and video recording. UgCS also comes with a telemetry player, allowing the replay of all flights. 
+
+UgCS comes with in-built no-fly zones around all major airports as well as the ability to create custom no-fly zones.
+
+Supports multi-node installation, meaning that it is possible to connect multiple pilots with UgCS laptops in the field to a central ground control server.
+
+-  **Platform**: Windows, Mac OS X, Ubuntu
+-  **Licence**: Proprietary with a free licence available as well (UgCS Open)
+
+.. image:: https://www.ugcs.com/files/2016-04/1459769168_elevation-profile.jpeg
+    :target:  https://www.ugcs.com/files/2016-04/1459769168_elevation-profile.jpeg
+
+-  `UgCS Website <http://www.ugcs.com>`__
+-  `DIY Drones Group for UgCS Users <http://diydrones.com/group/ugcs>`__
+-  `UgCS Github Repository <https://github.com/ugcs>`__
+
+Comparison Mobile
+==================
 
 Tower
 -----
@@ -76,92 +174,53 @@ drone) and special missions for 3D mapping.
    Legacy versions (`DroidPlanner 2 <https://play.google.com/store/apps/details?id=org.droidplanner>`__
    and `Droid Planner 1 <https://play.google.com/store/apps/details?id=com.droidplanner>`__)
    can also be downloaded from Google Play.
-   
-UgCS - Universal Ground Control Station
----------------------------------------
 
-Universal and easy to use ground control station with a 3D interface. Supports APM, Pixhawk as well as drones from other manufacturers such as DJI, Mikrokopter and more.
-Intended for enthusiasts as well as professional users.
-
-It is capable of communicating with and controlling multiple drones simultaneously. 
-
-UgCS supports multiple map layers as well as different map providers. Some of the features of UgCS include - DEM Import, ADS-B transponder and receiver support, Click & Go mode, Joystick mode, image geotagging and video recording. UgCS also comes with a telemetry player, allowing the replay of all flights. 
-
-UgCS comes with in-built no-fly zones around all major airports as well as the ability to create custom no-fly zones.
-
-Supports multi-node installation, meaning that it is possible to connect multiple pilots with UgCS laptops in the field to a central ground control server.
-
--  **Platform**: Windows, Mac OS X, Ubuntu
--  **Licence**: Proprietary with a free licence available as well (UgCS Open)
-
-.. image:: https://www.ugcs.com/files/2016-04/1459769168_elevation-profile.jpeg
-    :target:  https://www.ugcs.com/files/2016-04/1459769168_elevation-profile.jpeg
-
-
-
--  `UgCS Website <http://www.ugcs.com>`__
--  `DIY Drones Group for UgCS Users <http://diydrones.com/group/ugcs>`__
--  `UgCS Github Repository <https://github.com/ugcs>`__
-
-Mission Planner
----------------
-
-Full featured and widely used GCS. Intended for both developers and
-enthusiasts.
-
--  **Platform**: Windows, Mac OS X (Using Mono)
--  **Licence**: `Open source <https://github.com/ArduPilot/MissionPlanner/blob/master/COPYING.txt>`__
-   (GPLv3)
-
-.. image:: ../../../images/MP-FP-Screen.jpg
-    :target: ../_images/MP-FP-Screen.jpg
-
--  :ref:`Wiki <planner:home>`
--  `Support Forum <http://ardupilot.com/forum/viewforum.php?f=12>`__
--  `Issues List <https://github.com/ArduPilot/MissionPlanner/issues>`__
--  `Source Code <https://github.com/ArduPilot/MissionPlanner>`__
-
-APM Planner 2
+MAV Pilot 1.4
 -------------
 
-The best autopilot for use on MAC and Linux platforms. It has a smaller
-user base and reduced feature set when compared with Mission Planner.
-Intended for developers and enthusiasts.
+A GCS in your pocket that supports predominantly ArduPilot autopilot on iPhone/iPad. Supports for Plane, Copter & Rover vehicle types.
+Also supports ArDrone2.0 with Flight Recorder and PX4 Flight Stack.
 
--  **Platform**: Windows, Mac OS X, Linux
--  **Licence**: `Open source <https://github.com/ArduPilot/apm_planner/blob/master/license.txt>`__
-   (GPLv3)
+See website for how-to on how connect it to your autopilot
 
-.. image:: ../../../images/planner2_choose_agcs.jpg
-    :target: ../_images/planner2_choose_agcs.jpg
+-  **Platform**: iPhone, iPad
+-  **Licence**: Proprietary
 
--  :ref:`Wiki <planner2:home>`
--  `Support Forum <http://ardupilot.com/forum/viewforum.php?f=82>`__
--  `Issues List <https://github.com/ArduPilot/apm_planner/issues>`__
--  `Source Code <https://github.com/ArduPilot/apm_planner>`__
+.. image:: ../../../images/MAVPilot_1.4.png
+    :target: ../_images/MAVPilot_1.4.png
 
-MAVProxy
---------
+-  `Release announcement Blog & Discussion <http://diydrones.com/profiles/blogs/mav-pilot-1-4-for-iphone-released>`__
+-  `Support Blog <http://www.communistech.com/support/>`__
+-  `Support Forum <http://www.communistech.com/forums/>`__
+-  `iTunes Store link <https://itunes.apple.com/ca/developer/communis-tech/id649232032>`__
 
-Linux GCS often used by Plane developers. Primarily a command line
-interface with graphical modules for map and mission editing. Written in
-Python, and extensible via python modules.
+SidePilot
+---------
 
--  **Platform**: Linux
--  **Licence**: `Open source <https://github.com/tridge/MAVProxy/blob/master/COPYING.txt>`__
-   (GPLv3)
+ArduPilot compatible GCS that runs on iPhone/iPad. Also supports PX4 and 3DR Solo.
 
-.. image:: ../../../images/planner2_choose_agcs.jpg
-    :target:  http://ardupilot.github.io/MAVProxy/html/_images/mavproxy_linux.jpg
+See website for how-to on how connect it to your autopilot
 
--  `Getting Started <http://ardupilot.github.io/MAVProxy/html/index.html>`__
--  `Issues List <https://github.com/ArduPilot/MAVProxy/issues>`__
--  `Source Code <https://github.com/ArduPilot/MAVProxy>`__
+-  **Platform**: iPhone, iPad
+-  **Licence**: Proprietary
+
+.. image:: ../../../images/sidepilot.jpg
+    :target: ../_images/sidepilot.jpg
+
+-  `Release announcement Blog & Discussion <http://diydrones.com/profiles/blogs/sidepilot-app-version-1-1-formerly-imavlink>`__
+-  `Website <http://sidepilot.net>`__
+-  `Support Forum <http://sidepilot.net/forum>`__
+-  `iTunes Store link <https://itunes.apple.com/us/app/sidepilot/id1138193193?ls=1&mt=8>`__
 
 AndroPilot
 ----------
 
 Android GCS intended for enthusiasts.
+
+.. note::
+
+   AndroPilot is not under active development. Its suitability for newer FW needs to be confirmed.
+
 
 -  **Platform**: Android Phones and Tablets
 -  **Licence**: `Open Source <https://github.com/geeksville/arduleader/blob/master/LICENSE.md>`__
@@ -176,57 +235,6 @@ Android GCS intended for enthusiasts.
 -  `Support Forum <http://ardupilot.com/forum/viewforum.php?f=14>`__
 -  `Issues List <https://github.com/geeksville/arduleader/issues>`__
 -  `Source Code <https://github.com/geeksville/arduleader/tree/master/andropilot>`__
-
-MAV Pilot
----------
-
-ArduPilot compatible GCS that runs on iPhone/iPad. Also supports PX4
-Flight Stack and ArDrone2.0 with Flight Recorder.
-
-See website for how-to on how connect it to your autopilot
-
--  **Platform**: iPhone, iPad
--  **Licence**: Proprietary
-
-.. image:: ../../../images/ChooseAGCS_MAVPilot.jpg
-    :target: ../_images/ChooseAGCS_MAVPilot.jpg
-
--  `Release announcement Blog & Discussion <http://diydrones.com/profiles/blogs/mav-pilot-v1-0-for-iphone-is-available-in-the-app-store>`__
--  `Support Blog <http://www.communistech.com/support/>`__
--  `Support Forum <http://www.communistech.com/forums/>`__
--  `iTunes Store link <https://itunes.apple.com/ca/developer/communis-tech/id649232032>`__
-
-
-QGroundControl
---------------
-
-Developed for our sister autopilot system, the "Native PX4 stack"
-*QGroundControl* can connect and display attitude information and
-parameter lists but is not customised to work with the ArduPilot
-firmware as much as the other ground stations listed above.
-
--  **Platform**: Windows, Mac OS X, Linux, Android
--  **Licence**: `Open Source <http://www.qgroundcontrol.org/license>`__
-   (GPLv3)
-
-.. image:: ../../../images/QGroundControlTabletImage.jpg
-    :target: ../_images/QGroundControlTabletImage.jpg
-
--  `Website <http://www.qgroundcontrol.org/>`__
--  `Support Forum <https://groups.google.com/forum/#!forum/qgroundcontrol>`__
--  `Gitter <https://gitter.im/mavlink/qgroundcontrol>`__
-
-.. warning::
-
-   Januray 2016: Full support for ArduPilot firmware vehicles in
-   QGroundControl is now in beta. This includes full Setup and
-   Configuration, Mission Planning, Flight Display as well as streaming
-   video. Also QGroundControl is now supported on Android tablets.
-
-   -  The Beta link in here:
-      `www.qgroundcontrol.org/apm <http://www.qgroundcontrol.org/apm>`__
-   -  Download link:
-      `www.qgroundcontrol.org/downloads <http://www.qgroundcontrol.org/downloads>`__
 
 Additional GSC hardware
 =======================
@@ -248,6 +256,16 @@ For Android devices, you will need:
    `Amazon <http://www.amazon.com/T-Flash-Adapter-Samsung-GT-i9100-GT-N7000/dp/B005FUNYSA/ref=sr_1_5?ie=UTF8&qid=1376262351&sr=8-5&keywords=android+otg+cable>`__).
 
    |AndroidGCS_USB_dongle|
+   
+iOS
+-------
+
+For iOS devices, you will need:
+
+-  iOS Based device such as an iPad or iPhone. If running iPad, the cellular version is recommended for better GPS support.
+-  Wifi or Bluetooth LE link to the Drone
+-  Bridge Connection to a:ref:`SiK Telemetry Radio System <common-sik-telemetry-radio>` via Wifi or Bluetooth LE
+  See iOS App Vendors for more details.
 
 Desktop PCs (Windows/Mac/Linux
 ------------------------------

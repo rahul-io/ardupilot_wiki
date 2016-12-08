@@ -51,12 +51,9 @@ table below:
 +-------------------------------------------+--------------+-----------------+
 
 Most users will only need to select their autopilot/compass
-configuration and perform the :ref:`Live Calibration <common-compass-setup-advanced_live_calibration_of_offsets>` but details are also given
-on the less-used 
-[site wiki="copter"]
-:ref:`CompassMot <common-compass-setup-advanced_compassmot_compensation_for_interference_from_the_power_wires_escs_and_motors>` and
-[/site] 
-Manual Declination.  Most of this configuration can be
+configuration and perform the :ref:`Live Calibration <common-compass-setup-advanced_live_calibration_of_offsets>` but details are also given on the less-used  :ref:`CompassMot <common-compass-setup-advanced_compassmot_compensation_for_interference_from_the_power_wires_escs_and_motors>` and
+Manual Declination.  
+Most of this configuration can be
 performed from the *Mission Planner*'s **Initial Setup \| Mandatory
 Hardware \| Compass** screen.  Other ground stations may have similar
 features.
@@ -207,13 +204,6 @@ distortions.
          *sqrt(offset_x^2+offset_y^2+offset_Z^2) < 600*). Prior to Copter
          3.2.1 the recommendation was that the absolute value of each offset
          be less than 150 (i.e. *-150 < offset < 150*).
-
-.. tip::
-
-   Some users recommend performing the calibration outdoors away from
-   metal objects using wireless telemetry (primarily so you don't get
-   tangled in the cable) although no tests have been performed to confirm
-   this is necessary.
 
 The video below is from earlier versions of the calibration routine but
 may still produce good offsets.

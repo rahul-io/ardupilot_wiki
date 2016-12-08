@@ -4,6 +4,14 @@
 Building the code
 =================
 
+.. note:: 
+
+   Code building has changed for newer releases to use **waf** build tools, replacing make.
+   
+   In most cases the build dependecies described for **make** are the same, the only part of the instructions changes is the issue of the **waf** build commmand. 
+ 
+   see https://github.com/ArduPilot/ardupilot/blob/master/BUILD.md
+
 The linked articles below explain how to build ArduPilot for different
 target hardware on the supported development environments (Linux,
 Windows, Mac OSX). The included links also cover building the code for
@@ -14,6 +22,7 @@ Plane, Copter, Rover
 
 **Windows users:**
 
+-  :ref:`Building ArduPilot on Windows10 with Bash on Ubuntu on Windows <building-ardupilot-onwindows10>`
 -  :ref:`Building ArduPilot with Arduino for Windows <building-ardupilot-with-arduino-windows>`
 -  :ref:`Pixhawk/PX4 on Windows with Make <building-px4-with-make>` 
 -  :ref:`Editing & Building with Atmel Studio or Visual Studio <building-ardupilot-apm-with-visual-studio-visual-micro>`

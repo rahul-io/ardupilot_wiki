@@ -31,7 +31,7 @@ Build instructions
 #. Clone the ardupilot repository onto your machine:
 
    -  Go to the
-      `GitHub/diydrones/ardupilot <https://github.com/ArduPilot/ardupilot>`__
+      `GitHub/ArduPilot/ardupilot <https://github.com/ArduPilot/ardupilot>`__
       web page and click the **Clone in Desktop** button
    -  Warning: be careful that the directory path is less than about 50
       characters.  For example
@@ -75,10 +75,11 @@ Build the firmware by entering one of the following commands:
 |                                      | hexacopter.                          |
 |                                      |                                      |
 |                                      | # Other supported suffixes include   |
-|                                      | "octa", "tri" and "heli".            |
+|                                      | "octa", "octa-quad, "tri"            |
+|                                      |  and "heli".                         |
 |                                      |                                      |
 |                                      | # More can be found in               |
-|                                      | "mk/tagets.mk" under FRAMES          |
+|                                      | "mk/targets.mk" under FRAMES         |
 +--------------------------------------+--------------------------------------+
 | ``make px4``                         | Build both PX4 and PixHawk firmware  |
 |                                      | for a quadcopter                     |

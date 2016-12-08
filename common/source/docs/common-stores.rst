@@ -8,6 +8,7 @@ The following stores are known to stock quality versions of the controllers, tel
 recommended for use with ArduPilot (in alphabetical order).
 
 * `AUAV <http://www.auav.co/>`__
+* `Bask Aerospace <http://www.baskaerospace.com.au/>`__
 * `Craft & Theory <http://www.craftandtheoryllc.com/store/>`__
 * `CUAV <http://www.cuav.net>`__
 * `Emlid <https://emlid.com/shop/>`__
@@ -17,6 +18,7 @@ recommended for use with ArduPilot (in alphabetical order).
 * `JapanDrones <http://japandrones.com/>`__
 * `jDrones <http://store.jdrones.com/>`__
 * `Lightware <http://www.lightware.co.za>`__
+* `mRobotics <http://mrobotics.io/>`__
 * `Northox <https://northox.myshopify.com/>`__
 * `ProfiCNC <http://www.proficnc.com/stores>`__
 * `RF Design <http://store.rfdesign.com.au/>`__

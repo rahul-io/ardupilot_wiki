@@ -86,6 +86,8 @@ Dec 2010 - first successful fork of ardupilot code as `MegaPirates group extends
 April 2011 – First fully autonomous Copter mission flown by Jason at
 `Sparkfun AVC <http://diydrones.com/profiles/blogs/acm-at-the-avc>`__
 
+April 2011 - Laser Navigation made the first piece of 32 bit hardware capable of running the Arducopter software
+
 2011 - APM2 released by 3D Robotics
 
 Nov 2011 - `AutoTester <http://autotest.ardupilot.org/>`__ is created by
@@ -144,8 +146,7 @@ Dec 2013 - `BeaglePilot project <https://github.com/BeaglePilot/beaglepilot>`__ 
 Jan 2014 - Extended Kalman Filter added for more reliable attitude and
 position information by Paul Riseborough, Tridge
 
-Mar 2014 -
-`VRBrain <http://www.virtualrobotix.com/page/vr-brain-v4-0>`__ boards
+Mar 2014 - `VRBrain <http://www.virtualrobotix.com/page/vr-brain-v4-0>`__ boards
 support added by Emile Castelnuovo and Tridge
 
 Mar 2014 - `Emlid presented Navio <http://diydrones.com/profiles/blogs/navio-raspberry-pi-autopilot>`__, first Raspberry Pi autopilot shield that allows to run ArduPilot directly on Raspberry Pi.
@@ -189,6 +190,8 @@ March 2016 - 3DR ceases direct funding of ArduPilot community as it `cuts jobs <
 March 2016 - Formation of the `ardupilot.org non profit organisation <http://diydrones.com/profiles/blogs/a-new-chapter-in-ardupilot-development>`__ and new website.
 
 May 2016 - `Flirtey delivery drone (using ardupilot) is entered into Smithsonian Air and Space Museum <http://www.smithsonianmag.com/smart-news/first-delivery-drone-united-states-lands-spot-smithsonian-180958964/?no-ist>`__.
+
+Sep 2016 - Flymaple board support removed ( not actively tested or used , also lacks a maintainer see PR #4191 ).
 
 Sep 2016 - Relationship with 3DR, Chris Anderson and PX4 team lead sours as DroneCode Platinum board members outvote Silver board members to remove GPLv3 projects including ArduPilot from DroneCode.
 

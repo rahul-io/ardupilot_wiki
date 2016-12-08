@@ -6,7 +6,7 @@ Fixed Wing FAQ
 
 This is a set of frequently asked questions with answers. It is created
 when we see questions in `the forums <http://ardupilot.com/forum/viewforum.php?f=1>`__ or on
-`diydrones.com <http://diydrones.com/>`__ that are not sufficiently
+`discuss.ardupilot.org <http://discuss.ardupilot.org/c/arduplane>`__ that are not sufficiently
 answered in the rest of the docs.
 
 When reading this FAQ please refer to the :doc:`full parameter list <parameters>` for an explanation of each
@@ -26,6 +26,9 @@ That will prevent the throttle dropping below 10%, but will give you
 manual throttle control for idling while on the ground, and manual
 throttle control in stabilisation modes (such as FBWA and STABILIZE) for
 shutting down the motor when you need to.
+
+THR_SLEWRATE can also aid in prevention of a nitro engine stalling in
+flight by slowing the throttle advance from going wide open to quickly.
 
 How do you prevent the servo demo and have faster startups?
 -----------------------------------------------------------

@@ -17,7 +17,7 @@ This article shows how to build ArduPilot for APM2.x on Windows with *Make*.
    3.4.0 no longer fit on APM boards. Plane, Rover and AntennaTracker
    builds can still be installed at time of writing but you can no longer
    build APM2.x off the master branch (you will need to build off a
-   supported release branch).
+   supported release branch, or for the keen developer, from the AVR-master branch master-AVR and the tags from there.  see: https://github.com/ArduPilot/ardupilot/tree/master-AVR ).
 
    The last Copter firmware that can be built on APM 2.x 
    `can be downloaded from here <http://firmware.ardupilot.org/downloads/wiki/firmware/ArduCopter_APM_2.0_Firmware_3.2.1.zip>`__.
@@ -60,8 +60,7 @@ Build instructions
 
           git clone https://github.com/ArduPilot/ardupilot.git
           cd ardupilot
-          git submodule init
-          git submodule update
+          git submodule update --init --recursive
 
    -  Checkout the branch you want to build (the last branch you can use
       for Copter is shown below):

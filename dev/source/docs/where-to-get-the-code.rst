@@ -30,7 +30,7 @@ projects are used for PX4 based platforms (ie. PX4v1 and Pixhawk):
 you build the project.
 
 MissionPlanner is in the
-`diydrones/MissionPlanner <https://github.com/ArduPilot/MissionPlanner>`__
+`ardupilot/MissionPlanner <https://github.com/ArduPilot/MissionPlanner>`__
 repository.
 
 .. note::
@@ -130,8 +130,7 @@ side of the screen on each Github repository home page.
 
        git clone https://github.com/your-github-account-name/ardupilot
        cd ardupilot
-       git submodule init
-       git submodule update
+       git submodule update --init --recursive
 
    or the main project:
 
@@ -139,13 +138,12 @@ side of the screen on each Github repository home page.
 
        git clone https://github.com/ArduPilot/ardupilot
        cd ardupilot
-       git submodule init
-       git submodule update
+       git submodule update --init --recursive
 
 **Windows (GitHub GUI):**
 
 -  Open the
-   `diydrones/ardupilot <https://github.com/ArduPilot/ardupilot>`__
+   `ardupilot/ardupilot <https://github.com/ArduPilot/ardupilot>`__
    repository in your favorite web browser
 -  Click on the "Clone in Desktop" button on the bottom right
 
@@ -165,7 +163,7 @@ side of the screen on each Github repository home page.
       run it and follow the instructions to install GitHub client
 
 -  On GitHub client click the right arrow button to view a list of
-   recent commits or right-mouse-button click on the diydrones/ardupilot
+   recent commits or right-mouse-button click on the ardupilot/ardupilot
    repository and "open in explorer".
 
    .. image:: ../images/CloningTheRepository_Windows_OpenGithub.png
